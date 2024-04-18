@@ -49,8 +49,10 @@ module app 'core/host/container-app-upsert.bicep' = {
         value: applicationInsights.properties.ConnectionString
       }
       ]
-    secrets: [
-      ]
+    secrets: {
+     }
+    keyvaultIdentities: {
+    }
     postgresServiceId: postgresServiceId
     targetPort: 8000
   }
